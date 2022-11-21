@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+    <h1>JavaScript</h1>
+    <h2>JS-Handson-3</h2>
+    <br>
+    <h4>1.Find the number of digits</h4>
+    <p>Take a number from the user and print the count of digits in that number.</p>
+    <br>
+    <h4>2.Find the Fives.</h4>
+    <p>Among all the digits from 0−9, PrepBuddy likes number 5. He has a number and wants you to find out the number of times 5 occurred in the given number.</p>
+    <br>
+    <h4>3.Find Sum</h4>
+    <p> You are given an integer 
+        N
+        , and your task is to find the sum of all the even integers starting from 
+        1
+         upto 
+        N
+         (
+        N
+         inclusive).</p>
+    <br>
+    <h4>4.Find the sum of the digits of a given number.</h4>
+    <p>Write a program that takes a number from the user and get the sum of the digits present in the number.</p>
+    <pre>const Number_Sum = (N) => 
+      {
+        let sum=0;
+        while(N){
+          sum=sum+(N%10);
+          N=parseInt(N/10);
+        }
+         return sum;	
+      };</pre>
+    <br>
+    <h4>5.Print the Odds.</h4>
+    <p>Write a program which takes  a number from user and print all odd numbers in between 2 and N, but print 2 first.</p>
+    <br>
+    <h4>6.Print the Pattern.</h4>
+    <p>Write a program which ask user for no of lines and print a pattern using an asterik .</p>
+    <pre>const Print_pattern = (N) => 
+      {
+        for(var i=1; i<=N; i++){
+          console.log('*'.repeat(i));
+        }
+      };</pre>
+    <br>
+    <h4>7.Check whether a Number is a prime or not.</h4>
+    <p>Write a program which takes  a number from user and check whether number is prime number or not a prime number.</p>
+    <br>
+    <h4>8.Print Numbers</h4>
+    <p>You are given an integer 
+        N
+        , and your task is to print all the integers starting from 
+        1
+         till 
+        N
+         (
+        N
+         inclusive).</p>
+    <pre>const printNumbers = (n) => {
+      for(let i=1; i<=n; i++){
+        console.log(i);
+      }  
+    };</pre>
+    <br>
+    <h4>9.Print the Table</h4>
+    <p>Write a program which takes a number from user and print the table.</p>
+    <pre>const Print_Table = (N) => 
+        {
+          for(let i = 1; i<=10; i++){
+            console.log(`${N} * ${i} = ${N*i}`);
+          }	
+        };
+        </pre>
+    </div>
+
+</body>
+</html>
