@@ -28,3 +28,9 @@ pre:hover {
     color:red;
     background-color: green;
 }
+pre {
+    
+    border: 2px solid red;
+    background-color: azure;
+    padding-left: 20px;
+}

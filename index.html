@@ -14,9 +14,31 @@
     <br>
     <h4>1.Find the number of digits</h4>
     <p>Take a number from the user and print the count of digits in that number.</p>
+    <pre>const Find_Digits = (N) => 
+      { 
+        let count=0;
+        while(N > 0){
+          N=parseInt(N/10);
+          count++;
+        }
+         return count;
+      };
+      </pre>
     <br>
     <h4>2.Find the Fives.</h4>
     <p>Among all the digits from 0−9, PrepBuddy likes number 5. He has a number and wants you to find out the number of times 5 occurred in the given number.</p>
+    <pre>const Find_Five = (N) => 
+      {
+        var find=0;
+        while(N>0){
+          if(N%10===5){
+            find++;
+          }
+          N=parseInt(N/10);
+        }
+        return find
+      };
+      </pre>
     <br>
     <h4>3.Find Sum</h4>
     <p> You are given an integer 
@@ -28,6 +50,18 @@
          (
         N
          inclusive).</p>
+    <pre>const findSum = (n) => {
+      var sum=0;
+      var number=0;
+      for(let i=0;i<=n;i++){
+        if(i%2===0){
+          sum +=i;
+        }
+        
+      }
+      return sum
+    };
+    </pre>
     <br>
     <h4>4.Find the sum of the digits of a given number.</h4>
     <p>Write a program that takes a number from the user and get the sum of the digits present in the number.</p>
@@ -43,6 +77,15 @@
     <br>
     <h4>5.Print the Odds.</h4>
     <p>Write a program which takes  a number from user and print all odd numbers in between 2 and N, but print 2 first.</p>
+    <pre>const Print_Odd = (N) => 
+      {
+        for(let i=2;i<=N;i++){
+          if(i===2){
+            console.log(i)
+          }else if(i%2!==0)
+          console.log(i)
+        }
+      };</pre>
     <br>
     <h4>6.Print the Pattern.</h4>
     <p>Write a program which ask user for no of lines and print a pattern using an asterik .</p>
@@ -55,6 +98,26 @@
     <br>
     <h4>7.Check whether a Number is a prime or not.</h4>
     <p>Write a program which takes  a number from user and check whether number is prime number or not a prime number.</p>
+    <pre>const Prime_Check = (N) => 
+      {
+        var flag=true;
+        if(N<=1){
+          return "NO"
+        }else if(N>1){
+          for(var i=2;i<=N-1;i++){
+            if(N%i===0){
+              flag=false;
+              break;
+            }
+          }
+        }
+        
+        if(flag===true)
+        return "YES"
+        else 
+        return "NO"
+      };
+      </pre>
     <br>
     <h4>8.Print Numbers</h4>
     <p>You are given an integer 
